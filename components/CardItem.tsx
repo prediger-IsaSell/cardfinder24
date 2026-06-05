@@ -9,12 +9,6 @@ export function CardItem({ card, source }: { card: Card; source: string }) {
       id={`karte-${card.id}`}
       className="group relative flex flex-col rounded-3xl glass p-7 sm:p-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-glow hover:border-mint/30 scroll-mt-28"
     >
-      {card.bonus && (
-        <span className="absolute -top-3 left-7 inline-flex items-center gap-1.5 rounded-full bg-gold px-3.5 py-1.5 text-xs font-bold text-night shadow-float">
-          ★ {card.bonus}
-        </span>
-      )}
-
       <div className="flex items-center justify-center py-3">
         <Image
           src={card.imagePath}
@@ -43,11 +37,16 @@ export function CardItem({ card, source }: { card: Card; source: string }) {
           ))}
         </ul>
 
-        {/* einheitlicher Status-Block (gleiche Form, gleiche Farbe, gleicher Text) */}
-        <div className="mt-7">
+        {/* Status-Block: kostenlos + (falls vorhanden) goldenes Bonus-Badge nah am Button */}
+        <div className="mt-7 flex flex-wrap items-center gap-2">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-mint/25 bg-mint/10 px-3 py-1 text-sm font-semibold text-mint">
             ✓ {card.annualFee}
           </span>
+          {card.bonus && (
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-gold px-3 py-1 text-sm font-bold text-night shadow-float">
+              ★ {card.bonus}
+            </span>
+          )}
         </div>
 
         {/* CTA-Block immer am unteren Ende (mt-auto) — identische Form auf allen Karten */}

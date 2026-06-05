@@ -1,11 +1,15 @@
 const FAQS = [
   {
+    q: 'Wie wählt ihr die Karten aus?',
+    a: 'Wir überprüfen den Markt der in Deutschland erhältlichen Karten und Konten, über 100 an der Zahl, und nehmen nur die auf, die dauerhaft kostenlos sind und die wir selbst nutzen würden. Geprüft haben wir unter anderem: N26, Revolut, Vivid, bunq, Wise, Tomorrow, C24 Bank, comdirect, DKB, ING, Consorsbank, Trade Republic, Openbank, norisbank, 1822direkt, Hanseatic GenialCard, American Express (Blue, PAYBACK, Gold, Platinum), easybank (ehemals Barclays), Santander BestCard, TARGOBANK, Advanzia Gebührenfrei Mastercard Gold, awa7, TF Bank, Klarna, PayPal, Curve, Crypto.com, Miles & More und viele weitere.',
+  },
+  {
     q: 'Ist cardfinder24 wirklich kostenlos für mich?',
     a: 'Ja, vollständig. Wir bekommen eine Provision vom Anbieter, wenn du dich für eine Karte entscheidest. Du zahlst nichts an uns.',
   },
   {
     q: 'Warum nur drei Karten?',
-    a: 'Weil 150 Karten zu vergleichen niemanden weiterbringt. Wir filtern vor und zeigen nur die, die wir selbst gut finden.',
+    a: 'Weil über 100 Karten zu vergleichen niemanden weiterbringt. Wir filtern vor und zeigen nur die, die wir selbst gut finden.',
   },
   {
     q: 'Bekomme ich die Karte garantiert?',
@@ -13,17 +17,17 @@ const FAQS = [
   },
   {
     q: 'Was passiert, wenn ich klicke?',
-    a: 'Du wirst direkt zum Antrag des Anbieters weitergeleitet. Den Antrag stellst du dort — wir sehen deine Daten nicht.',
+    a: 'Du wirst direkt zum Antrag des Anbieters weitergeleitet. Den Antrag stellst du dort. Wir sehen deine Daten nicht.',
   },
   {
     q: 'Kann ich mehrere Karten beantragen?',
-    a: 'Grundsätzlich ja. Mehrere Anfragen in kurzer Zeit können deine Bonität aber kurzfristig drücken — wähle gezielt.',
+    a: 'Grundsätzlich ja. Mehrere Anfragen in kurzer Zeit können deine Bonität aber kurzfristig drücken. Wähle also gezielt.',
   },
 ];
 
 export function FAQ() {
   return (
-    <section className="py-20 sm:py-28">
+    <section id="faq" className="py-20 sm:py-28 scroll-mt-20">
       <div className="container-narrow max-w-3xl">
         <div className="text-center mb-12">
           <span className="eyebrow">Gut zu wissen</span>

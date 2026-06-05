@@ -1,4 +1,11 @@
+'use client';
+
 export function FinalCta() {
+  const toTop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <section className="pb-24">
       <div className="container-narrow">
@@ -14,10 +21,10 @@ export function FinalCta() {
             <p className="mt-5 text-lg text-ash">
               Drei kostenlose Karten, ein Klick zum Antrag. Mehr braucht es nicht.
             </p>
-            <a href="#karten" className="btn-primary mt-8">
-              Zu den Karten
+            <a href="#top" onClick={toTop} className="btn-primary mt-8">
+              Jetzt Karte wählen
               <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                <path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </a>
           </div>

@@ -7,11 +7,11 @@ export function About() {
           Wir vergleichen Karten anders.
         </h2>
         <p className="mt-6 text-lg text-ash leading-relaxed">
-          Statt 150 Treffer zu zeigen und dich allein zu lassen, treffen wir die
-          Vorauswahl — und nehmen nur Karten auf, die wir selbst nutzen würden.
+          Andere werfen dir hundert Karten hin und lassen dich damit allein. Wir nehmen nur die,
+          die wir selbst in der Tasche haben.
         </p>
         <p className="mt-5 text-xl font-semibold text-cloud">
-          Du entscheidest in fünf Minuten. <span className="text-mint-gradient">Nicht in fünf Stunden.</span>
+          Du entscheidest in einer Minute. <span className="text-mint-gradient">Nicht in fünf Stunden.</span>
         </p>
       </div>
     </section>

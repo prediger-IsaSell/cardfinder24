@@ -24,11 +24,11 @@ export const CARDS: Card[] = [
     issuer: 'easybank (ehemals Barclays)',
     cardType: 'Kreditkarte',
     imagePath: '/cards/easybank-visa.svg',
-    tagline: 'Echte Kreditkarte, dauerhaft 0 € – und 60 € geschenkt.',
+    tagline: 'Eine richtige Kreditkarte ohne Gebühren, die dich mit 60 € begrüßt.',
     benefits: [
       'Weltweit gebührenfrei bezahlen & Geld abheben',
       'Bis zu 59 Tage zinsfrei zahlen',
-      'Flexible Rückzahlung – du bestimmst die Rate',
+      'Flexible Rückzahlung in deinem Tempo',
     ],
     annualFee: 'Dauerhaft kostenlos',
     bonus: '60 € Startguthaben',
@@ -45,7 +45,7 @@ export const CARDS: Card[] = [
     imagePath: '/cards/amex-payback.svg',
     tagline: 'Lass dich für Einkäufe belohnen, die du sowieso machst.',
     benefits: [
-      'Dauerhaft 0 € – auch jede Zusatzkarte',
+      'Dauerhaft 0 €, auch jede Zusatzkarte',
       'PAYBACK Punkte bei jedem Einkauf, doppelt bei Partnern',
       'Punkte verfallen nie, solange du aktiv bleibst',
     ],
@@ -61,7 +61,7 @@ export const CARDS: Card[] = [
     issuer: 'N26 Bank',
     cardType: 'Girokonto + Mastercard Debit',
     imagePath: '/cards/n26.svg',
-    tagline: 'Deine Bank passt in die Hosentasche – ohne Papierkram.',
+    tagline: 'Deine Bank passt in die Hosentasche. Ganz ohne Papierkram.',
     benefits: [
       'Kostenloses Girokonto, in Minuten per App eröffnet',
       'Virtuelle Mastercard sofort einsatzbereit',

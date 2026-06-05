@@ -32,7 +32,7 @@ export function DeepLinkBanner() {
     <div className="relative z-50 bg-mint text-night">
       <div className="container-narrow flex items-center justify-between gap-3 py-2.5">
         <p className="text-sm font-semibold leading-tight">
-          👉 Im echten Browser öffnen — für volle Sicherheit & Funktion.
+          👉 Im echten Browser öffnen, dann läuft alles sicher.
         </p>
         <button
           onClick={handleOpen}

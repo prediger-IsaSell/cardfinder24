@@ -4,15 +4,15 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://cardfinder24.de'),
   title: {
-    default: 'cardfinder24 — Drei Karten. Null Gebühren.',
+    default: 'cardfinder24 · Deine Karte. Null Gebühren.',
     template: '%s · cardfinder24',
   },
   description:
-    'Hör auf, fürs Bezahlen zu zahlen. Wir haben aus hunderten Karten die drei herausgesucht, die dauerhaft kostenlos sind — und sich wirklich lohnen.',
+    'Dauerhaft kostenlose Karten, die sich wirklich lohnen. Such dir deine aus und beantrage sie in Minuten.',
   openGraph: {
-    title: 'cardfinder24 — Drei Karten. Null Gebühren.',
+    title: 'cardfinder24 · Deine Karte. Null Gebühren.',
     description:
-      'Aus hunderten Karten die drei herausgesucht, die dauerhaft kostenlos sind — und sich wirklich lohnen.',
+      'Dauerhaft kostenlose Karten, die sich wirklich lohnen. Such dir deine aus.',
     locale: 'de_DE',
     type: 'website',
   },
