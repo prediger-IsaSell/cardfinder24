@@ -41,7 +41,14 @@ export function CardChooser() {
   };
 
   return (
-    <div id="auswahl" className="mt-7 grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 max-w-[260px] md:max-w-3xl mx-auto scroll-mt-24">
+    <div
+      id="auswahl"
+      className="
+        grid grid-cols-1 sm:grid-cols-3
+        gap-2 sm:gap-4 md:gap-5 lg:gap-7
+        w-full mx-auto scroll-mt-24
+      "
+    >
       {CARDS.map((card) => (
         <a
           key={card.id}

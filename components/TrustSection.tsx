@@ -1,8 +1,8 @@
 export function TrustSection() {
   const items = [
     {
-      title: 'Selbst überprüft',
-      body: 'Jede Karte würden wir auch selbst in der Tasche haben.',
+      title: 'Handverlesen',
+      body: 'Wir zeigen nur Karten, die uns wirklich überzeugen.',
       icon: (
         <path d="M10 2L12.5 7.5L18.5 8.3L14 12.5L15.2 18.5L10 15.5L4.8 18.5L6 12.5L1.5 8.3L7.5 7.5L10 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
       ),
@@ -24,7 +24,7 @@ export function TrustSection() {
   ];
 
   return (
-    <section id="auswahl" className="py-16 sm:py-20">
+    <section className="py-16 sm:py-20">
       <div className="container-narrow">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-8">
           {items.map((item) => (

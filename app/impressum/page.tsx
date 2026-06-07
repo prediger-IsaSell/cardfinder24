@@ -18,29 +18,49 @@ export default function ImpressumPage() {
 
           <div className="space-y-6">
             <section>
-              <h2 className="text-xl font-bold text-cloud mb-2">Angaben gemäß § 5 TMG</h2>
+              <h2 className="text-xl font-bold text-cloud mb-2">Angaben gemäß § 5 DDG</h2>
               <p className="text-ash leading-relaxed">
-                [Vor- und Nachname]<br />[Straße und Hausnummer]<br />[PLZ und Ort]<br />Deutschland
+                Paul Prediger<br />
+                Franz-Reiche-Ring 15<br />
+                90478 Nürnberg<br />
+                Deutschland
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-bold text-cloud mb-2">Kontakt</h2>
-              <p className="text-ash leading-relaxed">E-Mail: [kontakt@cardfinder24.de oder andere Adresse]</p>
+              <p className="text-ash leading-relaxed">E-Mail: info@cardfinder24.de</p>
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-cloud mb-2">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-              <p className="text-ash leading-relaxed">[Vor- und Nachname]<br />[Adresse]</p>
+              <h2 className="text-xl font-bold text-cloud mb-2">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+              <p className="text-ash leading-relaxed">
+                Paul Prediger<br />
+                Franz-Reiche-Ring 15<br />
+                90478 Nürnberg
+              </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-bold text-cloud mb-2">Haftungsausschluss</h2>
+              <h2 className="text-xl font-bold text-cloud mb-2">Haftung für Inhalte</h2>
               <p className="text-ash leading-relaxed text-sm">
-                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
-                Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
-                Die Konditionen der vorgestellten Karten können sich ändern, bitte prüfe immer die
-                aktuellen Bedingungen direkt beim Anbieter.
+                Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
+                Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.
+                Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten
+                nach den allgemeinen Gesetzen verantwortlich. Die Konditionen der vorgestellten Karten
+                können sich jederzeit ändern. Maßgeblich sind allein die aktuellen Bedingungen direkt
+                beim jeweiligen Anbieter. Die Inhalte stellen keine Finanz-, Anlage- oder
+                Steuerberatung dar.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-cloud mb-2">Haftung für Links</h2>
+              <p className="text-ash leading-relaxed text-sm">
+                Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen
+                Einfluss haben. Für diese fremden Inhalte ist stets der jeweilige Anbieter oder
+                Betreiber der Seiten verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werden
+                wir derartige Links umgehend entfernen.
               </p>
             </section>
 
@@ -48,14 +68,18 @@ export default function ImpressumPage() {
               <h2 className="text-xl font-bold text-cloud mb-2">Affiliate-Hinweis</h2>
               <p className="text-ash leading-relaxed text-sm">
                 cardfinder24 enthält Werbung in Form von Affiliate-Links. Beantragt ein Nutzer über
-                diese Links eine Karte, erhalten wir vom jeweiligen Anbieter eine Provision. Für den
-                Nutzer entstehen dadurch keine zusätzlichen Kosten.
+                diese Links eine Karte, erhalten wir vom jeweiligen Anbieter eine Provision über das
+                Netzwerk Financeads. Für den Nutzer entstehen dadurch keine zusätzlichen Kosten.
               </p>
             </section>
 
-            <p className="text-xs text-ash/70 italic border-t border-hairline pt-6 mt-8">
-              Platzhalter — bitte vor Veröffentlichung mit echten Daten ersetzen.
-            </p>
+            <section>
+              <h2 className="text-xl font-bold text-cloud mb-2">Verbraucherstreitbeilegung</h2>
+              <p className="text-ash leading-relaxed text-sm">
+                Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer
+                Verbraucherschlichtungsstelle teilzunehmen (§ 36 VSBG).
+              </p>
+            </section>
           </div>
         </div>
       </main>

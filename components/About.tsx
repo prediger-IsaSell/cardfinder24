@@ -7,8 +7,8 @@ export function About() {
           Wir vergleichen Karten anders.
         </h2>
         <p className="mt-6 text-lg text-ash leading-relaxed">
-          Andere werfen dir hundert Karten hin und lassen dich damit allein. Wir nehmen nur die,
-          die wir selbst in der Tasche haben.
+          Andere werfen dir hundert Karten hin und lassen dich damit allein. Wir zeigen dir nur die,
+          die uns wirklich überzeugt haben.
         </p>
         <p className="mt-5 text-xl font-semibold text-cloud">
           Du entscheidest in einer Minute. <span className="text-mint-gradient">Nicht in fünf Stunden.</span>

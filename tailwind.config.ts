@@ -28,8 +28,10 @@ const config: Config = {
         hairline: 'rgba(255,255,255,0.08)',
       },
       fontFamily: {
-        display: ['"Clash Display"', 'system-ui', 'sans-serif'],
-        sans: ['Satoshi', 'system-ui', 'sans-serif'],
+        // System-Schriften: keine externen Server, keine IP-Übertragung, sofortiges Rendern.
+        // iPhone → San Francisco, Android → Roboto, Windows → Segoe UI.
+        display: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+        sans: ['system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
       },
       maxWidth: { content: '1140px' },
       boxShadow: {

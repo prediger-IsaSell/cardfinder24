@@ -31,8 +31,12 @@ export function DeepLinkBanner() {
   return (
     <div className="relative z-50 bg-mint text-night">
       <div className="container-narrow flex items-center justify-between gap-3 py-2.5">
-        <p className="text-sm font-semibold leading-tight">
-          👉 Im echten Browser öffnen, dann läuft alles sicher.
+        <p className="text-sm font-semibold leading-tight flex items-center gap-1.5">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="flex-shrink-0">
+            <path d="M6 9V6a4 4 0 0 1 8 0v3" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+            <rect x="4" y="9" width="12" height="9" rx="1.6" stroke="currentColor" strokeWidth="1.7" />
+          </svg>
+          Im Browser öffnen, sicher beantragen
         </p>
         <button
           onClick={handleOpen}

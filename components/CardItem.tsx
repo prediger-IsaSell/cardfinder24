@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import type { Card } from '@/lib/cards';
+import { PaymentBadges } from './PaymentBadges';
 
 export function CardItem({ card, source }: { card: Card; source: string }) {
   const redirectUrl = `/api/go/${card.id}?from=${encodeURIComponent(source)}`;
@@ -7,19 +8,20 @@ export function CardItem({ card, source }: { card: Card; source: string }) {
   return (
     <article
       id={`karte-${card.id}`}
-      className="group relative flex flex-col rounded-3xl glass p-7 sm:p-8 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-glow hover:border-mint/30 scroll-mt-28"
+      className="relative flex flex-col rounded-3xl glass p-7 sm:p-8 transition-all duration-300 scroll-mt-28"
     >
-      <div className="flex items-center justify-center py-3">
+      <div className="flex flex-col items-center py-3">
         <Image
           src={card.imagePath}
           alt={card.name}
           width={360}
           height={227}
-          className="w-full max-w-[260px] h-auto rounded-2xl shadow-float ring-1 ring-white/10 transition-transform duration-300 group-hover:scale-[1.04]"
+          className="w-full max-w-[260px] h-auto rounded-2xl shadow-float ring-1 ring-white/10"
         />
+        <PaymentBadges />
       </div>
 
-      <div className="mt-7 flex flex-col flex-1">
+      <div className="mt-4 flex flex-col flex-1">
         <p className="text-[11px] font-semibold uppercase tracking-[0.15em] text-ash">{card.cardType}</p>
         <h3 className="mt-1.5 text-xl font-bold text-cloud">{card.name}</h3>
         <p className="mt-2 text-[15px] text-ash leading-relaxed">{card.tagline}</p>
@@ -49,7 +51,7 @@ export function CardItem({ card, source }: { card: Card; source: string }) {
           )}
         </div>
 
-        {/* CTA-Block immer am unteren Ende (mt-auto) — identische Form auf allen Karten */}
+        {/* CTA-Block immer am unteren Ende (mt-auto), identische Form auf allen Karten */}
         <div className="mt-auto pt-6">
           <a href={redirectUrl} rel="sponsored nofollow noopener" className="btn-primary w-full">
             {card.ctaText}

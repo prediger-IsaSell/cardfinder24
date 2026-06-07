@@ -1,7 +1,7 @@
 const FAQS = [
   {
     q: 'Wie wählt ihr die Karten aus?',
-    a: 'Wir überprüfen den Markt der in Deutschland erhältlichen Karten und Konten, über 100 an der Zahl, und nehmen nur die auf, die dauerhaft kostenlos sind und die wir selbst nutzen würden. Geprüft haben wir unter anderem: N26, Revolut, Vivid, bunq, Wise, Tomorrow, C24 Bank, comdirect, DKB, ING, Consorsbank, Trade Republic, Openbank, norisbank, 1822direkt, Hanseatic GenialCard, American Express (Blue, PAYBACK, Gold, Platinum), easybank (ehemals Barclays), Santander BestCard, TARGOBANK, Advanzia Gebührenfrei Mastercard Gold, awa7, TF Bank, Klarna, PayPal, Curve, Crypto.com, Miles & More und viele weitere.',
+    a: 'Wir verschaffen uns einen Überblick über den Markt der in Deutschland verfügbaren Karten und Konten, über 100 an der Zahl, und wählen daraus die aus, die dauerhaft kostenlos sind und die wir guten Gewissens empfehlen. In unsere Auswahl fließen unter anderem Anbieter wie N26, Revolut, Vivid, bunq, Wise, Tomorrow, C24 Bank, comdirect, DKB, ING, Consorsbank, Trade Republic, Openbank, Hanseatic GenialCard, American Express, easybank (ehemals Barclays), Advanzia, awa7, TF Bank, Klarna und PayPal ein. Das ist unsere persönliche Einschätzung, kein wissenschaftlicher Test und keine Anlageberatung.',
   },
   {
     q: 'Ist cardfinder24 wirklich kostenlos für mich?',
