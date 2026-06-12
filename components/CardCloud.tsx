@@ -37,18 +37,38 @@ function MiniCard({ from, to }: Mini) {
   );
 }
 
+const FLOAT_CONFIGS = [
+  { anim: 'float-a', dur: '11s', delay: '0s' },
+  { anim: 'float-b', dur: '14s', delay: '-3s' },
+  { anim: 'float-c', dur: '16s', delay: '-6s' },
+  { anim: 'float-a', dur: '12s', delay: '-9s' },
+  { anim: 'float-b', dur: '10s', delay: '-1s' },
+  { anim: 'float-c', dur: '13s', delay: '-4s' },
+  { anim: 'float-a', dur: '15s', delay: '-7s' },
+  { anim: 'float-b', dur: '11s', delay: '-2s' },
+  { anim: 'float-c', dur: '14s', delay: '-5s' },
+  { anim: 'float-a', dur: '12s', delay: '-8s' },
+  { anim: 'float-b', dur: '16s', delay: '-3s' },
+  { anim: 'float-c', dur: '10s', delay: '-6s' },
+];
+
 export function CardCloud() {
   return (
     <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-visible blur-[0.8px]">
-      {CARDS_BG.map((c, i) => (
-        <div
-          key={i}
-          className="absolute aspect-[1.586/1] opacity-[0.55]"
-          style={{ top: c.top, left: c.left, width: c.w, transform: `rotate(${c.rot}deg)` }}
-        >
-          <MiniCard from={c.from} to={c.to} />
-        </div>
-      ))}
+      {CARDS_BG.map((c, i) => {
+        const f = FLOAT_CONFIGS[i % FLOAT_CONFIGS.length];
+        return (
+          <div
+            key={i}
+            className="absolute aspect-[1.586/1] opacity-[0.55]"
+            style={{ top: c.top, left: c.left, width: c.w, transform: `rotate(${c.rot}deg)` }}
+          >
+            <div style={{ animation: `${f.anim} ${f.dur} ease-in-out ${f.delay} infinite`, height: '100%', width: '100%' }}>
+              <MiniCard from={c.from} to={c.to} />
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
